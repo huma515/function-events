@@ -48,8 +48,16 @@ background-color: aqua;
 <input type="password" name="password"  id="pass">
 <input type="checkbox" id="checkbox" onchange="val()">
  -->
+<!-- window.location.href="home.html"
 
-    </div>
+    </div>-->
+
+  <input type="text" id="task">
+<button class="btn" onclick="val()">click</button>
+<div >
+    <ul id="main"> 
+
+    </ul> 
    
 
 
@@ -116,7 +124,22 @@ background-color: aqua;
 //    }
 // }, 1000);
 
+// console.log(window)
+// function add(){
 
+// window.location.href="home.html"
+
+// // window.location.href="about.html"
+
+// }
+
+
+ var ul = document.getElementById('main')
+    var task = document.getElementById('task')
+ function val (){
+  ul.innerHTML +='<li>' + task.value +'</li>'
+  task.value = ''
+ }
 </script>
 
 
